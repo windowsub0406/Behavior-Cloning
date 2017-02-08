@@ -46,7 +46,7 @@ would be good guide to understand the exact concept.
  
 #### hardware  
   
->CPU : i7-4720HQ 2.60Hz, GPU : GTX 970M, Memory : 16GB  
+>CPU : i7-4720HQ 2.60GHz, GPU : GTX 970M, Memory : 16GB  
     
 ## Files
   
