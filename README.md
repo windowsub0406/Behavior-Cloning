@@ -223,9 +223,12 @@ visual_layer1, visual_layer2 = layer1.predict(img), layer2.predict(img)
 I visualized convolutional layer 1 and layer 2. I expected that 'the first and second layer have just simple features(e.g. line, edge, curve) and the rear layer has more complex features like texture or entire object.' [This paper](http://www.matthewzeiler.com/pubs/arxive2013/eccv2014.pdf)(Visualizing and Understanding
 Convolutional Networks) shows that. But in my model it doesn't look like that. NVIDIA paper also shows slmilar result with me.  
 
-That's because our model is a simple regression model having 1 output. After checking from layer 1 to layer 4, I found out that __any layer does not extract more complex features.__  
-  
-So far, I completely misunderstood the CNN structure as 'every CNN models have simple feature in first layer and getting more complex as layer goes by.' **`But it was wrong!!`**  
+After checking from layer 1 to layer 4, I found out that __any layer does not extract more complex features.__
+~~That's because our model is a simple regression model having 1 output.~~
+I found out the reason. :) really simple.
+The expected feature map represents visualization of trained **filter** and my feature map represents visualization of trained **layer**.  
+I was confused between **`filter result and layer result`**.
+
 This test brought me great information.  
   
   
