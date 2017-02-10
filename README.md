@@ -227,7 +227,7 @@ After checking from layer 1 to layer 4, I found out that __any layer does not ex
 ~~That's because our model is a simple regression model having 1 output.~~  
 I found out the reason. :) really simple.  
 The expected feature map represents visualization of trained **filter** and my feature map represents visualization of trained **layer**.  
-I was confused between **`filter result and layer result`**.
+I was confused between 'feature activation'(expected) and 'activation of the feature map'(my result).
 
 This test brought me great information.  
   
